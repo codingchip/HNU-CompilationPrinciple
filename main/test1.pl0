@@ -1,0 +1,11 @@
+CONST
+    a = 10,
+    b = 20;
+VAR
+    x, y, z;
+BEGIN
+    x := a;
+    y := b;
+    z := x + y;
+    WRITE(x, y, z)
+END.

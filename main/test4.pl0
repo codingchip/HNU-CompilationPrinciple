@@ -1,0 +1,23 @@
+CONST
+    max = 100;
+VAR
+    n;
+
+PROCEDURE factorial;
+VAR
+    f, i;
+BEGIN
+    READ(n);
+    f := 1;
+    i := 1;
+    WHILE i <= n DO
+    BEGIN
+        f := f * i;
+        i := i + 1
+    END;
+    WRITE(f)
+END;
+
+BEGIN
+    CALL factorial
+END.

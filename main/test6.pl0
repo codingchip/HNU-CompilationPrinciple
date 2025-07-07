@@ -1,0 +1,28 @@
+VAR
+    a, b;
+
+PROCEDURE p1;
+VAR
+    c;
+    
+    PROCEDURE p2;
+    VAR
+        d;
+    BEGIN
+        d := 4;
+        c := c + d;
+        a := a + c
+    END;
+    
+BEGIN
+    c := 3;
+    CALL p2;
+    b := a + c
+END;
+
+BEGIN
+    a := 1;
+    b := 2;
+    CALL p1;
+    WRITE(a, b)
+END.

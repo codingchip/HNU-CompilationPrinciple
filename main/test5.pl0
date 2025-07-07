@@ -1,0 +1,7 @@
+VAR
+    x;
+BEGIN
+    READ(x);
+    IF ODD x THEN
+        WRITE(1)
+END.

@@ -1,0 +1,12 @@
+VAR
+    i, sum;
+BEGIN
+    i := 1;
+    sum := 0;
+    WHILE i <= 10 DO
+    BEGIN
+        sum := sum + i;
+        i := i + 1
+    END;
+    WRITE(sum)
+END.
